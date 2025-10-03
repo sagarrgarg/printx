@@ -1,7 +1,7 @@
 [project]
 name = "printx"
 authors = [
-    { name = "Sagar Ratan Garh", email = "sagar1ratan1garg1@gmail.co"}
+    { name = "Sagar Ratan Garg", email = "sagar1ratan1garg1@gmail.com"}
 ]
 description = "PrintX adds option to use pyppeteer as pdf engine"
 requires-python = ">=3.10"
@@ -9,6 +9,7 @@ readme = "README.md"
 dynamic = ["version"]
 dependencies = [
     # "frappe~=15.0.0" # Installed and managed by bench.
+    "pyppeteer>=1.0.2"
 ]
 
 [build-system]

@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "creation": "2024-03-10 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_settings_section",
+  "debug_mode",
+  "viewport_settings_section",
+  "default_width",
+  "default_height",
+  "device_scale_factor",
+  "column_break_1",
+  "pdf_settings_section",
+  "default_format",
+  "print_background",
+  "custom_code_section",
+  "enable_custom_css",
+  "custom_css",
+  "enable_custom_js",
+  "custom_js"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_settings_section",
+   "fieldtype": "Section Break",
+   "label": "General Settings"
+  },
+  {
+   "default": "0",
+   "fieldname": "debug_mode",
+   "fieldtype": "Check",
+   "label": "Debug Mode"
+  },
+  {
+   "fieldname": "viewport_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Viewport Settings"
+  },
+  {
+   "default": "800",
+   "fieldname": "default_width",
+   "fieldtype": "Int",
+   "label": "Default Width",
+   "reqd": 1
+  },
+  {
+   "default": "600",
+   "fieldname": "default_height",
+   "fieldtype": "Int",
+   "label": "Default Height",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "device_scale_factor",
+   "fieldtype": "Float",
+   "label": "Device Scale Factor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pdf_settings_section",
+   "fieldtype": "Section Break",
+   "label": "PDF Settings"
+  },
+  {
+   "default": "A4",
+   "fieldname": "default_format",
+   "fieldtype": "Select",
+   "label": "Default Format",
+   "options": "A4\nA3\nLetter\nLegal",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "print_background",
+   "fieldtype": "Check",
+   "label": "Print Background"
+  },
+  {
+   "fieldname": "custom_code_section",
+   "fieldtype": "Section Break",
+   "label": "Custom Code"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_custom_css",
+   "fieldtype": "Check",
+   "label": "Enable Custom CSS"
+  },
+  {
+   "depends_on": "enable_custom_css",
+   "fieldname": "custom_css",
+   "fieldtype": "Code",
+   "label": "Custom CSS",
+   "options": "CSS"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_custom_js",
+   "fieldtype": "Check",
+   "label": "Enable Custom JS"
+  },
+  {
+   "depends_on": "enable_custom_js",
+   "fieldname": "custom_js",
+   "fieldtype": "Code",
+   "label": "Custom JavaScript",
+   "options": "JavaScript"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-03-10 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "PrintX",
+ "name": "PrintX Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
+

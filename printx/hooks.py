@@ -84,6 +84,11 @@ app_license = "mit"
 
 # before_install = "printx.install.before_install"
 # after_install = "printx.install.after_install"
+before_install = "printx.install.add_pdf_generator_option"
+
+# PDF Generator Hook
+pdf_generator = "printx.print_format.print_format.generate_pdf"
+before_uninstall = "printx.uninstall.remove_pdf_generator_option"
 
 # Uninstallation
 # ------------
